@@ -1,0 +1,82 @@
+{
+  "name": "PayPaySampleWebApp",
+  "version": "0.1.0",
+  "private": false,
+  "author": "opensource@paypay-corp.co.jp",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "core-js": "^3.12.1",
+    "date-fns": "^2.21.3",
+    "element-ui": "^2.15.1",
+    "uuid": "^8.3.2",
+    "vue": "^2.6.12",
+    "vue-axios": "^3.2.4",
+    "vue-class-component": "^7.2.6",
+    "vue-i18n": "^8.24.4",
+    "vue-property-decorator": "^9.1.2",
+    "vue-router": "^3.5.1",
+    "vuedraggable": "^2.24.3",
+    "vuex": "^3.6.2",
+    "vuex-class": "^0.3.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.23",
+    "@typescript-eslint/eslint-plugin": "^4.24.0",
+    "@typescript-eslint/parser": "^4.24.0",
+    "@vue/cli-plugin-babel": "^4.5.12",
+    "@vue/cli-plugin-eslint": "^4.5.12",
+    "@vue/cli-plugin-router": "^4.5.12",
+    "@vue/cli-plugin-typescript": "^4.5.12",
+    "@vue/cli-plugin-unit-jest": "^4.5.12",
+    "@vue/cli-plugin-vuex": "^4.5.12",
+    "@vue/cli-service": "^4.5.12",
+    "@vue/eslint-config-typescript": "^7.0.0",
+    "@vue/test-utils": "^1.2.0",
+    "eslint": "^7.25.0",
+    "eslint-plugin-vue": "^7.9.0",
+    "node-sass": "^5.0.0",
+    "sass-loader": "10.1.1",
+    "typescript": "^4.2.4",
+    "vue-template-compiler": "^2.6.12"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended",
+      "@vue/typescript"
+    ],
+    "rules": {
+      "no-console": "off",
+      "no-unused-vars": "off"
+    },
+    "parserOptions": {
+      "parser": "@typescript-eslint/parser"
+    },
+    "overrides": [
+      {
+        "files": [
+          "**/*/*.spec.{j,t}s?(x)",
+          "**/__tests__/*.{j,t}s?(x)",
+          "**/tests/unit/**/*.spec.{j,t}s?(x)"
+        ],
+        "env": {
+          "jest": true
+        }
+      }
+    ]
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}
